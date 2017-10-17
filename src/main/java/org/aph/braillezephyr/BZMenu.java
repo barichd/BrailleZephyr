@@ -98,7 +98,7 @@ public final class BZMenu extends BZBase
 		item.setText("&File");
 		item.setMenu(menu);
 
-		new NewHandler().addMenuItemTo(menu, "&New");
+		new NewHandler().addMenuItemTo(menu, "&New\t" + mod1KeyName + "N", SWT.MOD1 | 'n');
 		new OpenHandler().addMenuItemTo(menu, "&Open\t" + mod1KeyName + "O", SWT.MOD1 | 'o');
 
 		if(bzSettings != null)
